@@ -82,8 +82,47 @@ inquirer
         - [Credits](#credits)
         - [License](#license)
         - [Features](#features)
-        - [Contributing](#contributing)`
+        - [Contributing](#contributing)`;
     }
+    const filename = 'README.md';
+    const markdown = `
+    
+    # ${data.title}
+    
+    ${toc}
+    
+    ## Description
+    
+    ${data.motivation}
+    ${data.build}
+    ${data.problem}
+    ${data.learn}
+
+    ## Installation
+
+    ${data.installation}
+
+    ## Usage
+    
+    ${data.usage}
+    
+    ## Credits
+    
+    ${data.credit}
+    
+    ## License
+    
+    ${data.license}
+    
+    ## Addtional Features
+    
+    ${data.features}
+    
+    ## How to Contribute
+    
+    ${data.contribute}`;
+
+    
   })
 // TODO: Create a function to initialize app
 function init() {}
