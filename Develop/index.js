@@ -65,11 +65,8 @@ inquirer
             name: 'contribute',
             message: 'Please tell other developers how they can contribute to the project.',
           },
-  ]);
+  ])
 
-function writeToFile(fileName, data) {}
-inquirer
-  .prompt(questions)
   .then((data) => {
     let toc = '';
     if (data.toc) {
