@@ -65,11 +65,26 @@ inquirer
             name: 'contribute',
             message: 'Please tell other developers how they can contribute to the project.',
           },
-  ])
+  ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
-
+inquirer
+  .prompt(questions)
+  .then((data) => {
+    let toc = '';
+    if (data.toc) {
+       toc = 
+        `## Table of Contents
+        
+        - [Installation](#installation)
+        - [Usage](#usage)
+        - [Credits](#credits)
+        - [License](#license)
+        - [Features](#features)
+        - [Contributing](#contributing)`
+    }
+  })
 // TODO: Create a function to initialize app
 function init() {}
 
