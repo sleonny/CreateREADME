@@ -2,7 +2,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 // TODO: Create an array of questions for user input
-const questions = [];
+
 inquirer
   .prompt([
     {
@@ -65,9 +65,8 @@ inquirer
             name: 'contribute',
             message: 'Please tell other developers how they can contribute to the project.',
           },
-  ];
+  ]);
 
-// TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 inquirer
   .prompt(questions)
@@ -122,10 +121,11 @@ inquirer
     
     ${data.contribute}`;
 
-    
-  })
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
+    fs.writeFile(filename, markdown, (err) => {
+      if (err) {
+        console.log(error);
+      } else {
+        console.log('Created ${filename}')
+      }
+    });
+  });
