@@ -1,6 +1,6 @@
 
     
-    # bama
+    # README Generator
     
     ## Table of Contents
         
@@ -13,31 +13,32 @@
     
     ## Description
     
-    naga
-    k
-    
-    
-
+    I bulit this project to save time when maintaining my github repo.  It generates a markdown document using prompts so I do not have to spend time writing markdown.
+   
     ## Installation
 
-    jkd
+    You npm i inquirer then node index.js to begin the prompts.
 
     ## Usage
     
-    kdja;
+    To generate a README file quickly and efficiently
     
     ## Credits
     
-    kdj
+    w3 schools, google search, vs code editor, git bash
     
     ## License
     
-    kd
+    MIT License
     
     ## Addtional Features
     
-    kadsjfka;
+    I want to include a screenshot of the image
     
     ## How to Contribute
     
-    kadsjkda;
+    import the code and have at it 
+    
+    ## App url
+    
+    www.index.js
