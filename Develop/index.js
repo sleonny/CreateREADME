@@ -69,7 +69,8 @@ inquirer
         - [Credits]
         - [License]
         - [Features]
-        - [Contributing]`;
+        - [Contributing]
+        - [App url]`;
     }
     const filename = 'README.md';
     const markdown = `
