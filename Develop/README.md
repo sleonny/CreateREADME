@@ -3,7 +3,9 @@
     # README Generator
     
     ## Table of Contents
-        
+
+        - [Description]
+        - [Screenshot]
         - [Installation]
         - [Usage]
         - [Credits]
@@ -14,19 +16,23 @@
     
     ## Description
     
-    This project was created to generate high quaity README files for future projects.  Creating this increased my knowledge of the inquirer package and node.js.
+    I created this project to generate high quality README files for future projects.  I learned how to use inquirer and node.js to accomplish this.
+
+    ## Screenshot
+
+    ./develop/screenshot/exampleREADME.png
    
     ## Installation
 
-    To install please clone the repository @ github.com/sleonny/CreateREADME
+    To install please clone the code from the repository @ github.com/sleonny/CreateREADME
 
     ## Usage
     
-    To quickly and easily create README files for future projects.
+    To quickly and easily generate README markdown files for future projects
     
     ## Credits
     
-    Inquirer, W3 schools, VS Code Editor
+    Inquirer, W3 Schools, ChatGPT, VS Code Editor
     
     ## License
     
@@ -34,11 +40,11 @@
     
     ## Addtional Features
     
-    The ability to choose to inclue a table of contents.
+    The app includes the ability to include a table of contents or not.
     
     ## How to Contribute
     
-    To contribue please fork the repository and submit a pull request.  THANK YOU!
+    To contribute please fork from the repository @ https://github.com/sleonny/CreateREADME.  Then submit a pull request.  THANK YOU!
     
     ## App url
     
