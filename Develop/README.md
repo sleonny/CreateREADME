@@ -16,23 +16,23 @@
     
     ## Description
     
-    I created this project to generate high quality README files for future projects.  I learned how to use inquirer and node.js to accomplish this.
+    I created this project to generate high quality README files for future projects.  Extensive use of inquirer and node.js increased my profeciency in both.
 
     ## Screenshot
 
-    ./develop/screenshot/exampleREADME.png
+    ![Screenshot]./develop/screenshot/exampleREADME.png
    
     ## Installation
 
-    To install please clone the code from the repository @ github.com/sleonny/CreateREADME
+    To install this project please clone the code from the repository @ github.com/sleonny/CreateREADME.  Then use npm i inquirer to install the inquirer package.
 
     ## Usage
     
-    To quickly and easily generate README markdown files for future projects
+    To quickly and easily generate high quaility README markdown files for future projects.
     
     ## Credits
     
-    Inquirer, W3 Schools, ChatGPT, VS Code Editor
+    Inquirer, VS Code 
     
     ## License
     
@@ -40,11 +40,11 @@
     
     ## Addtional Features
     
-    The app includes the ability to include a table of contents or not.
+    You can choose to include a table of contents or not.
     
     ## How to Contribute
     
-    To contribute please fork from the repository @ https://github.com/sleonny/CreateREADME.  Then submit a pull request.  THANK YOU!
+    You can contribute by forking the repository @ https://github.com/sleonny/CreateREADME then submitting a pull request.  THANK YOU!
     
     ## App url
     
