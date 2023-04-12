@@ -1,7 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-// TODO: Create an array of questions for user input
+
 
 inquirer
   .prompt([
@@ -12,25 +12,10 @@ inquirer
     },
     {
       type: 'input',
-      name: 'motivation',
-     message: 'What motivated you to create this project?',
+      name: 'description',
+     message: 'Why did you create this project?  Include what problems it solves and what you learned building it.',
     },
     {
-      type: 'input',
-      name: 'build',
-      message: 'Why did you build this project?',
-    },
-    {
-        type: 'input',
-        name: 'problem',
-        message: 'What problem does this project solve?',
-      },
-      {
-        type: 'input',
-        name: 'learn',
-        message: 'What did you learn building this project?',
-      },
-      {
         type: 'confirm',
         name: 'toc',
         message: 'Would you like to include a table of contents?',
@@ -51,9 +36,10 @@ inquirer
           message: 'What collaborators or 3rd party applications would you like to acknowledge?',
         },
         {
-          type: 'input',
+          type: 'list',
           name: 'license',
           message: 'What, if any, license have you attached to the project?',
+          choices: ['Apache License 2.0', 'GNU General Public License 2.0', 'MIT License','Boost Software License 1.0', 'Eclipse Public License 2.0', 'None'],
         },
         {
             type: 'input',
@@ -65,6 +51,11 @@ inquirer
             name: 'contribute',
             message: 'Please tell other developers how they can contribute to the project.',
           },
+          {
+            type: 'input',
+            name: 'url',
+            message: 'What is the url of your project?',
+          },
   ])
 
   .then((data) => {
@@ -73,12 +64,12 @@ inquirer
        toc = 
         `## Table of Contents
         
-        - [Installation](#installation)
-        - [Usage](#usage)
-        - [Credits](#credits)
-        - [License](#license)
-        - [Features](#features)
-        - [Contributing](#contributing)`;
+        - [Installation]
+        - [Usage]
+        - [Credits]
+        - [License]
+        - [Features]
+        - [Contributing]`;
     }
     const filename = 'README.md';
     const markdown = `
@@ -89,11 +80,8 @@ inquirer
     
     ## Description
     
-    ${data.motivation}
-    ${data.build}
-    ${data.problem}
-    ${data.learn}
-
+    ${data.description}
+   
     ## Installation
 
     ${data.installation}
@@ -116,7 +104,11 @@ inquirer
     
     ## How to Contribute
     
-    ${data.contribute}`;
+    ${data.contribute}
+    
+    ## App url
+    
+    ${data.url}`;
 
     fs.writeFile(filename, markdown, (err) => {
       if (err) {
