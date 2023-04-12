@@ -92,7 +92,7 @@ inquirer
 
     ## Screenshot
 
-    ![Screenshot]${data.screenshot}
+    ![Screenshot](${data.screenshot})
    
     ## Installation
 
