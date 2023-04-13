@@ -16,11 +16,6 @@ inquirer
      message: 'Why did you create this project?  Include what problems it solves and what you learned building it.',
     },
     {
-      type: 'input',
-      name: 'screenshot',
-     message: 'Please provide the path to a screenshot of the project',
-    },
-    {
         type: 'confirm',
         name: 'toc',
         message: 'Would you like to include a table of contents?',
@@ -70,7 +65,6 @@ inquirer
         `## Table of Contents
 
         - [Description]
-        - [Screenshot]
         - [Installation]
         - [Usage]
         - [Credits]
@@ -90,10 +84,7 @@ inquirer
     
     ${data.description}
 
-    ## Screenshot
-
-    ![Screenshot](${data.screenshot})
-   
+       
     ## Installation
 
     ${data.installation}
