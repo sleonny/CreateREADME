@@ -11,11 +11,11 @@
        
     ## Installation
 
-    kjkj
+    kjkjkj
 
     ## Usage
     
-    kjkj
+    kjkjkj
     
     ## Credits
     
@@ -23,16 +23,18 @@
     
     ## License
     
-    MIT License
+    [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](kj;lkj)
+
+This project is licensed under the MIT License.
     
     ## Addtional Features
     
-    kjkj
+    kjkkj
     
     ## How to Contribute
     
-    kkjk
+    kjlj;lk
     
     ## App url
     
-    kjkjk
+    kj;lkj
