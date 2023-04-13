@@ -17,7 +17,6 @@
     
     This project was built to generate high quality README files for future projects. By building this I was able to also widen my knowledge and use of the inquirer package and node.js
 
-       
     ## Installation
 
     To install clone the repository @ github.com/sleonny/CreateREADME
@@ -36,7 +35,7 @@
     
     ## Addtional Features
     
-    The ability to select a table of contents or not
+    You have the option to select whether or not to include a table of contents, by choosing either yes or no.
     
     ## How to Contribute
     
