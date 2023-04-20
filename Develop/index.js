@@ -111,22 +111,6 @@ inquirer
         break;
     }
 
-    let toc = "";
-    if (data.toc) {
-      toc = `## Table of Contents
-
-        - [Description]
-        - [Installation]
-        - [Usage]
-        - [Credits]
-        - [License]
-        - [Tests]
-        - [Features]
-        - [Contributing]
-        - [App url]
-        - [Questions?]`;
-    }
-
     // Construct the license section of the markdown with the badge URL
     const licenseMarkdown = licenseBadgeUrl
       ? `[![License](${licenseBadgeUrl})](${data.url})\n\n${licenseDescription}`
@@ -137,11 +121,21 @@ inquirer
     
     # ${data.title}
 
+    ![badge](https://img.shields.io/badge/license-${data.license}-brightgreen)
+
     ## Description
     
     ${data.description}
     
-    ${toc}
+   ## Table of Contents
+
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
     
     ## Installation
 
@@ -153,18 +147,14 @@ inquirer
 
     ## License
     
+    ## License
     ![badge](https://img.shields.io/badge/license-${data.license}-brightgreen)
-<br />
-This application is covered by the ${data.license} license. 
+    This application is covered by the ${data.license} license. 
     
     ## Credits
     
     ${data.credit}  
   
-   ## Addtional Features
-    
-    ${data.features}
-
     ## Tests
 
     ${data.tests}
