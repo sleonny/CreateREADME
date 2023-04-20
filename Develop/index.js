@@ -59,11 +59,6 @@ inquirer.prompt([
   },
   {
     type: "input",
-    name: "url",
-    message: "What is the URL of your project?",
-  },
-  {
-    type: "input",
     name: "github",
     message: "What is your github user name?",
   },
@@ -120,23 +115,17 @@ const markdown = `
     ## How to Contribute
     
     ${data.contribute}
-    
-    ## App url
-    
-    ${data.url}
-    
+     
     ## Questions?
     
     Come see me on GitHub @ [${data.github}](https://github.com/${data.github});
     Or
     Email me @ ${data.email}`;
 
-const outputPath = path.join(__dirname, "..", "README.md");
-
-fs.writeFile(outputPath, markdown, (err) => {
+fs.writeFile(filename, markdown, (err) => {
   if (err) {
-    console.log(err);
+    console.log(error);
   } else {
-    console.log(`Created ${outputPath}`);
+    console.log(`Created ${filename}`);
   }
 });
