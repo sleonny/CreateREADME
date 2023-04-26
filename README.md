@@ -9,7 +9,7 @@
     This project was created to save time by quickly and easily generating a markdown README file.  Using node.js and the inquirer package allows the user to store inforamtion from the prompts in the command line to build the documnent
     
   
-  [![Demonstration of the README Generator](https://drive.google.com/file/d/1r0zU7CoMNcJLbL4gg8yW4XsUOHlXBTHn/view)](https://drive.google.com/file/d/1r0zU7CoMNcJLbL4gg8yW4XsUOHlXBTHn/view)
+  [![Demonstration of the README Generator](https://drive.google.com/file/d/1r0zU7CoMNcJLbL4gg8yW4XsUOHlXBTHn/view/thumbnail)](https://drive.google.com/file/d/1r0zU7CoMNcJLbL4gg8yW4XsUOHlXBTHn/view)
   
   ## Table of Contents
 
